@@ -9,13 +9,14 @@
   title   = {Topic Detection and Tracking},
   year    = {1998},
   url     = {http://repository.cmu.edu/cgi/viewcontent.cgi?article=1335&context=compsci},
-  annote  = {Topic Detection and Tracking (TDT) is a DARPA-sponsored initiative to investigate the state of the art in finding and following new events in a stream of broadcast news stories. The TDT problem consists of three major tasks: (1) segmenting a stream of data, especially recognized speech, into distinct stories; (2) identifying those news stories that are the first to discuss a new event occurring in the news; and (3) given a small number of sample news stories about an event, finding all following stories in the stream.
+  abstract  = {Topic Detection and Tracking (TDT) is a DARPA-sponsored initiative to investigate the state of the art in finding and following new events in a stream of broadcast news stories. The TDT problem consists of three major tasks: (1) segmenting a stream of data, especially recognized speech, into distinct stories; (2) identifying those news stories that are the first to discuss a new event occurring in the news; and (3) given a small number of sample news stories about an event, finding all following stories in the stream.
 \vspace{5 mm}
 The TDT Pilot Study ran from September 1996 through October 1997. The primary participants were DARPA, Carnegie Mellon University, Dragon Systems, and the University of Massachusetts at Amherst. This report summarizes the findings of the pilot study.
 \vspace{5 mm}
 The TDT work continues in a new project involving larger training and test corpora, more active participants, and a more broadly defined notion of “topic” than was used in the pilot study.
 \vspace{5 mm}
-The following individuals participated in the research reported.}
+The following individuals participated in the research reported.},
+  annote	= {This older paper (1998) describes an outdated method of topic detection. }
 }
 
 @MISC{Blei06correlatedtopic,
@@ -23,8 +24,11 @@ The following individuals participated in the research reported.}
   title   = {Correlated Topic Models},
   year    = {2006},
   url     = {http://machinelearning.wustl.edu/mlpapers/paper_files/NIPS2005_774.pdf},
-  annote  = {Topic models, such as latent Dirichlet allocation (LDA), can be useful tools for the statistical analysis of document collections and other discrete data. The LDA model assumes that the words of each document arise from a mixture of topics, each of which is a distribution over the vocabulary. A limitation of LDA is the inability to model topic correlation even though, for example, a document about genetics is more likely to also be about disease than x-ray astronomy. This limitation stems from the use of the Dirichlet distribution to model the variability among the topic proportions. In this paper we develop the correlated topic model (CTM), where the topic proportions exhibit correlation via the logistic normal distribution [1]. We derive a mean-field variational inference algorithm for approximate posterior inference in this model, which is complicated by the fact that the logistic normal is not conjugate to the multi-nomial. The CTM gives a better fit than LDA on a collection of OCRed articles from the journal Science. Furthermore, the CTM provides a natural way of visualizing and exploring this and other unstructured data
-sets.}
+  abstract  = {Topic models, such as latent Dirichlet allocation (LDA), can be useful tools for the statistical analysis of document collections and other discrete data. The LDA model assumes that the words of each document arise from a mixture of topics, each of which is a distribution over the vocabulary. A limitation of LDA is the inability to model topic correlation even though, for example, a document about genetics is more likely to also be about disease than x-ray astronomy. This limitation stems from the use of the Dirichlet distribution to model the variability among the topic proportions. In this paper we develop the correlated topic model (CTM), where the topic proportions exhibit correlation via the logistic normal distribution [1]. We derive a mean-field variational inference algorithm for approximate posterior inference in this model, which is complicated by the fact that the logistic normal is not conjugate to the multi-nomial. The CTM gives a better fit than LDA on a collection of OCRed articles from the journal Science. Furthermore, the CTM provides a natural way of visualizing and exploring this and other unstructured data
+sets.},
+  annote	= {LDA has it's limitations, including ``the inability to model topic correlation...This limitation stems from the use of the Dirichlet distribution to model the variability among thetopic proportions.'' This paper deploys and demonstrates the benefits of a new correlated topic model (CTM), ``where the topic proportions exhibit correlation via the logistic normal distribution.'' ``The CTM gives a better fit than LDA on ... OCRed articles'' as well as a ``natural way of visualizing and exploring this [even on] unstructured datasets.''
+
+The CTM gives a better fit than LDA on a collection of OCRed articles from the journal Science. Furthermore, the CTM provides a natural way of visualizing and exploring this and other unstructured datasets.}
 }
 
 @book{Blei2007Handbook,
