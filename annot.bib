@@ -8,8 +8,14 @@
   author  = {James Allan},
   title   = {Topic Detection and Tracking},
   year    = {1998},
-  url     = {http://repository.cmu.edu/cgi/viewcontent.cgi?article=1335\&context=compsci},
-  annote  = {}
+  url     = {http://repository.cmu.edu/cgi/viewcontent.cgi?article=1335&context=compsci},
+  annote  = {Topic Detection and Tracking (TDT) is a DARPA-sponsored initiative to investigate the state of the art in finding and following new events in a stream of broadcast news stories. The TDT problem consists of three major tasks: (1) segmenting a stream of data, especially recognized speech, into distinct stories; (2) identifying those news stories that are the first to discuss a new event occurring in the news; and (3) given a small number of sample news stories about an event, finding all following stories in the stream.
+\vspace{5 mm}
+The TDT Pilot Study ran from September 1996 through October 1997. The primary participants were DARPA, Carnegie Mellon University, Dragon Systems, and the University of Massachusetts at Amherst. This report summarizes the findings of the pilot study.
+\vspace{5 mm}
+The TDT work continues in a new project involving larger training and test corpora, more active participants, and a more broadly defined notion of “topic” than was used in the pilot study.
+\vspace{5 mm}
+The following individuals participated in the research reported.}
 }
 
 @MISC{Blei06correlatedtopic,
@@ -17,7 +23,8 @@
   title   = {Correlated Topic Models},
   year    = {2006},
   url     = {http://machinelearning.wustl.edu/mlpapers/paper_files/NIPS2005_774.pdf},
-  annote  = {}
+  annote  = {Topic models, such as latent Dirichlet allocation (LDA), can be useful tools for the statistical analysis of document collections and other discrete data. The LDA model assumes that the words of each document arise from a mixture of topics, each of which is a distribution over the vocabulary. A limitation of LDA is the inability to model topic correlation even though, for example, a document about genetics is more likely to also be about disease than x-ray astronomy. This limitation stems from the use of the Dirichlet distribution to model the variability among the topic proportions. In this paper we develop the correlated topic model (CTM), where the topic proportions exhibit correlation via the logistic normal distribution [1]. We derive a mean-field variational inference algorithm for approximate posterior inference in this model, which is complicated by the fact that the logistic normal is not conjugate to the multi-nomial. The CTM gives a better fit than LDA on a collection of OCRed articles from the journal Science. Furthermore, the CTM provides a natural way of visualizing and exploring this and other unstructured data
+sets.}
 }
 
 @book{Blei2007Handbook,
@@ -28,7 +35,7 @@
   address = {},
   year    = 2007,
   url     = {http://www.cs.princeton.edu/~blei/papers/Blei2011.pdf},
-  annote  = {}
+  annote  = {Probabilistic topic models are a suite of algorithms whose aim is to discover thehidden thematic structure in large archives of documents. In this article, we review themain ideas of this field, survey the current state-of-the-art, and describe some promisingfuture directions. We first describe latent Dirichlet allocation (LDA) [8], which is thesimplest kind of topic model. We discuss its connections to probabilistic modeling,and describe two kinds of algorithms for topic discovery. We then survey the growingbody of research that extends and applies topic models in interesting ways. Theseextensions have been developed by relaxing some of the statistical assumptions of LDA, incorporating meta-data into the analysis of the documents, and using similar kindsof models on a diversity of data types such as social networks, images and genetics. Finally, we give our thoughts as to some of the important unexplored directions fortopic modeling. These include rigorous methods for checking models built for dataexploration, new approaches to visualizing text and other high dimensional data, andmoving beyond traditional information engineering applications towards using topicmodels for more scientific ends.}
 }
 
 @MISC{Blei2006Dynamic,
@@ -36,7 +43,7 @@
   title   = {Dynamic Topic Models},
   year    = {2006},
   url     = {http://dl.acm.org/ft_gateway.cfm?id=1143859&ftid=364240&dwn=1&CFID=251978667&CFTOKEN=17214624},
-  annote  = {}
+  annote  = {A family of probabilistic time series models isdeveloped to analyze the time evolution of topicsin large document collections. The approach isto use state space models on the natural parameters of the multinomial distributions that represent the topics. Variational approximations basedon Kalman filters and nonparametric wavelet regression are developed to carry out approximateposterior inference over the latent topics. In addition to giving quantitative, predictive models of asequential corpus, dynamic topic models providea qualitative window into the contents of a largedocument collection. The models are demonstrated by analyzing the OCR’ed archives of thejournal Science from 1880 through 2000.}
 }
 
 @INPROCEEDINGS{Newman10automaticevaluation,
@@ -45,7 +52,7 @@
   booktitle = {In NAACL-HLT},
   year    = {2010},
   url     = {http://aclweb.org/anthology/N/N10/N10-1012.pdf},
-  annote  = {}
+  annote  = {This paper introduces the novel task of topic coherence evaluation, whereby a set of words, as generated by a topic model, is rated for coherence or interpretability. We apply a range of topic scoring models to the evaluation task, drawing on WordNet, Wikipedia and the Google search engine, and existing research on lexical similarity/relatedness. In comparison with human scores for a set of learned topics over two distinct datasets, we show a simple co-occurrence measure based on point-wise mutual information over Wikipedia data is able to achieve results for the task at or nearing the level of inter-annotator correlation, and that other Wikipedia-based lexical relatedness methods also achieve strong results. Google produces strong, if less consistent, results, while our results over WordNet are patchy at best.}
 }
 
 @InProceedings{hall-jurafsky-manning:2008:EMNLP,
@@ -58,21 +65,25 @@
   publisher = {Association for Computational Linguistics},
   pages     = {363--371},
   url       = {http://www.aclweb.org/anthology/D08-1038},
-  annote  	= {}
+  annote  	= {How can the development of ideas in a scientific field be studied over time? We apply unsupervised topic modeling to the ACL Anthology to analyze historical trends in the field of Computational Linguistics from 1978 to 2006. We induce topic clusters using Latent Dirichlet Allocation, and examine the strength of each topic over time. Our methods find trends in the field including the rise of probabilistic methods starting in 1988, a steady increase in applications, and a sharp decline of research in semantics and understanding between 1978 and 2001, possibly rising again after 2001. We also introduce a model of the diversity of ideas, topic entropy, using it to show that COLING is a more diverse conference than ACL, but that both conferences as well as EMNLP are becoming broader over time. Finally, we apply Jensen-Shannon divergence of topic distributions to show that all three conferences are converging in the topics they cover. }
 }
 
 @inproceedings{Herring:2006:Visualizing,
-  abstract  = {{In this paper we describe a technique for analyzingtextual conversations, Dynamic Topic Analysis, and atool, VisualDTA, for automatically creating visualizations of data coded according to this technique}},
+  abstract  = {In this paper we describe a technique for analyzingtextual conversations, Dynamic Topic Analysis, and atool, VisualDTA, for automatically creating visualizations of data coded according to this technique},
   author    = {Herring, S. C. and Kurtz, A. J.},
   journal   = {Proceedings of CHI'06},
   keywords  = {file-import-08-06-06, webanalysis},
   posted-at = {2008-06-06 23:24:43},
   priority  = {2},
   publisher = {ACM Press},
-  title     = {{Visualizing Dynamic Topic Analysis}},
+  title     = {Visualizing Dynamic Topic Analysis},
   year      = {2006},
   url       = {http://ella.slis.indiana.edu/~herring/chi06.pdf},
-  annote    = {}
+  annote    = {In this paper we describe a technique for analyzing
+textual conversations, Dynamic Topic Analysis, and a
+tool, VisualDTA, for automatically creating
+visualizations of data coded according to this technique.
+}
 }
 
 @InProceedings{Hindle_whatshot,
@@ -83,7 +94,7 @@
   pages   = {339-348},
   publisher = {International Conference on Software Maintenance - ICSM},
   url     = {http://swag.uwaterloo.ca/~ahindle/pubs/hindle09icsm.pdf},
-  annote  = {}
+  annote  = {As development on a software project progresses, developers shift their focus between different topics and tasksmany times. Managers and newcomer developers oftenseek ways of understanding what tasks have recently beenworked on and how much effort has gone into each; forexample, a manager might wonder what unexpected tasksoccupied their team’s attention during a period when theywere supposed to have been implementing a set of new features. Tools such as Latent Dirichlet Allocation (LDA) andLatent Semantic Indexing (LSI) can be used to analyze commit log comments over the entire lifetime of a project.Previous work on developer topic analysis has leveragedthese tools to associate commit log comments with independent topics extracted from these commit log comments. Inthis paper, we use LDA to analyze periods, such as months,within a project’s lifetime to create a time-windowed modelof changing development topics. We propose visualizationsof this model that allows us to explore the evolving streamof topics of development occurring over time. We demonstrate that windowed topic analysis offers advantages overtopic analysis applied to a project’s lifetime because manytopics are quite local.}
 }
 
 @InProceedings{asgari-chappelier:2013:CLfL,
@@ -96,15 +107,15 @@
   publisher = {Association for Computational Linguistics},
   pages     = {23--31},
   url       = {http://www.aclweb.org/anthology/W13-1404},
-  annote    = {}
+  annote    = {This paper describes the usage of Natural Language Processing tools, mostly probabilistictopic modeling, to study semantics (word correlations) in a collection of Persian poems consisting of roughly 18k poems from 30 different poets. For this study, we put a lot of effort in the preprocessing and the developmentof a large scope lexicon supporting both modern and ancient Persian. In the analysis step,we obtained very interesting and meaningfulresults regarding the correlation between poets and topics, their evolution through time,as well as the correlation between the topicsand the metre used in the poems. This workshould thus provide valuable results to literature researchers, especially for those workingon stylistics or comparative literature.}
 }
 
 @MISC{Krstovski2013efficient,
   author  = {Krstovski, Smith and McGregor, Wallach},
-  title   = {Efﬁcient Nearest-Neighbor Search in the Probability Simplex},
+  title   = {Efficient Nearest-Neighbor Search in the Probability Simplex},
   year    = {2013},
   url     = {http://www.ccs.neu.edu/home/dasmith/krstovski-ictir-2013.pdf},
-  annote  = {}
+  annote  = {Document similarity tasks arise in many areas of information retrieval and natural language processing. A fundamental question when comparing documents is which representation to use. Topic models, which have served as versatile tools for exploratory data analysis and visualization, represent documents as probability distributions over latent topics. Systems comparing topic distributions thus use measures of probability divergence such as Kullback-Leibler, Jensen-Shannon, or Hellinger. This paper presents novel analysis and applications of the reduction of Hellinger divergence to Euclidean distance computations. This reduction allows us to exploit fast approximate nearest-neighbor (NN) techniques, such as locality-sensitive hashing (LSH) and approximate search in k-d trees, for search in the probability simplex. We demonstrate the effectiveness and efficiency of this approach on two tasks using latent  Dirichlet allocation (LDA) document representations: discovering  relationships between National Institutes of Health (NIH) grants  and prior-art retrieval for patents. Evaluation on these tasks and on  synthetic data shows that both Euclidean LSH and approximate k-d tree search perform well when a single nearest neighbor must be  found. When a larger set of similar documents is to be retrieved,  the k-d tree approach is more effective and efficient. }
 }
 
 @InProceedings{snyder-EtAl:2013:Demos,
@@ -117,7 +128,7 @@
   publisher = {Association for Computational Linguistics},
   pages     = {5--9},
   url       = {http://www.aclweb.org/anthology/N13-3002},
-  annote  	= {}
+  annote  	= {Automatic interpretation of documents ishampered by the fact that language containsterms which have multiple meanings. Theseambiguities can still be found when languageis restricted to a particular domain, such asbiomedicine. Word Sense Disambiguation(WSD) systems attempt to resolve these ambiguities but are often only able to identify themeanings for a small set of ambiguous terms.DALE (Disambiguation using AutomaticallyLabeled Examples) is a supervised WSD system that can disambiguate a wide range ofambiguities found in biomedical documents.DALE uses the UMLS Metathesaurus as botha sense inventory and as a source of information for automatically generating labeledtraining examples. DALE is able to disambiguate biomedical documents with the coverage of unsupervised approaches and accuracyof supervised methods.}
 }
 
 @InProceedings{bethard-tzuyinlai-martin:2009:CALC-09,
@@ -130,7 +141,7 @@
   publisher = {Association for Computational Linguistics},
   pages     = {9--16},
   url       = {http://www.aclweb.org/anthology/W09-2002},
-  annote  	= {}
+  annote  	= {Psycholinguistic studies of metaphor processing must control their stimuli not just forword frequency but also for the frequencywith which a term is used metaphorically.Thus, we consider the task of metaphor frequency estimation, which predicts how oftentarget words will be used metaphorically. Wedevelop metaphor classifiers which representmetaphorical domains through Latent Dirichlet Allocation, and apply these classifiers tothe target words, aggregating their decisions toestimate the metaphorical frequencies. Training on only 400 sentences, our models are ableto achieve 61.3\% accuracy on metaphor classification and 77.8\% accuracy on H IGH vs. LOW metaphorical frequency estimation.}
 }
 
 @phdthesis{Stokes:2004,
@@ -141,5 +152,5 @@
   school  = {National University of Ireland},
   address = {Dublin},
   note    = {Supervisor: Dr. Joseph Carthy},
-  annote  = {}
+  annote  = {(See thesis)}
 }
