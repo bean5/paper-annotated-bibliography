@@ -1,0 +1,12 @@
+build:
+  build: .
+  command: make annot.pdf
+  working_dir: /main
+  volumes:
+    - './:/main'
+shell:
+  build: .
+  command: bash
+  working_dir: /main
+  volumes:
+    - './:/main'
