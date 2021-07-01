@@ -3,10 +3,10 @@ build:
   command: make annot.pdf
   working_dir: /main
   volumes:
-    - './:/main'
+    - './paper:/main'
 shell:
   build: .
   command: bash
   working_dir: /main
   volumes:
-    - './:/main'
+    - './paper:/main'
