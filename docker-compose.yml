@@ -1,12 +1,13 @@
-build:
-  build: .
-  command: make annot.pdf
-  working_dir: /main
-  volumes:
-    - './paper:/main'
-shell:
-  build: .
-  command: bash
-  working_dir: /main
-  volumes:
-    - './paper:/main'
+services:
+  build:
+    build: .
+    command: make annot.pdf
+    working_dir: /main
+    volumes:
+      - './paper:/main'
+  shell:
+    build: .
+    command: bash
+    working_dir: /main
+    volumes:
+      - './paper:/main'
